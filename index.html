@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0f5">
+  <title>A Little Surprise for Shruti 💗</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <section id="gate" class="gate">
+    <div class="gate-card">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <h1>Hey, Shruti<span>💗</span></h1>
+      <p class="gate-copy">Someone made this little corner of the internet just for you.</p>
+      <form id="unlock-form">
+        <label for="passcode">Enter our secret password</label>
+        <div class="password-row">
+          <input id="passcode" type="password" placeholder="Your secret password" autocomplete="off">
+          <button type="submit">Open <span>♥</span></button>
+        </div>
+        <p id="password-error" class="error" aria-live="polite"></p>
+      </form>
+      <p class="gate-foot">Made with all my love, from far away ✨</p>
+    </div>
+  </section>
+
+  <main id="site" class="hidden">
+    <header class="topbar">
+      <a class="brand" href="#home">for shruti <span>♥</span></a>
+      <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false">♫ <span>Play music</span></button>
+    </header>
+
+    <section id="home" class="hero section">
+      <div class="hero-glow"></div>
+      <div class="hero-ribbon ribbon-left" aria-hidden="true">🎀</div>
+      <div class="hero-ribbon ribbon-right" aria-hidden="true">🎀</div>
+      <div class="teddy teddy-left" aria-hidden="true">🧸</div>
+      <div class="teddy teddy-right" aria-hidden="true">🧸</div>
+      <p class="eyebrow reveal">TO THE GIRL WHO MAKES MY WORLD BRIGHTER</p>
+      <h1 class="reveal">Happy Birthday,<br><em>Shruti.</em> <span>♡</span></h1>
+      <p class="hero-sub reveal">If I could be anywhere right now, it would be right beside you.</p>
+      <a class="primary-btn reveal" href="#letter">A little surprise awaits ↓</a>
+      <div class="scroll-note">SCROLL WITH A SMILE</div>
+    </section>
+
+    <section class="intro section">
+      <p class="eyebrow reveal">A NOTE FROM ME TO YOU</p>
+      <h2 class="reveal">Miles apart,<br><em>never far at heart.</em></h2>
+      <p class="body-copy reveal">Even from 800 kilometres away, I wanted to make sure your day feels a little more special. So I made you this tiny world, filled with love, just for you.</p>
+      <div class="big-heart reveal">♥</div>
+      <div class="tiny-teddy-row" aria-hidden="true"><span>🧸</span><span>🎀</span><span>🧸</span></div>
+    </section>
+
+    <section class="gallery section">
+      <p class="eyebrow reveal">LITTLE MOMENTS, BIG FEELINGS</p>
+      <h2 class="reveal">Our favourite <em>memories.</em></h2>
+      <p class="section-hint reveal">Replace these sample cards with your favourite photos in the <b>assets/photos</b> folder.</p>
+      <div class="photo-grid">
+        <figure class="photo-card reveal"><img src="assets/photos/photo1.jpg" alt="Add your first favourite memory" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder">♡<small>your favourite smile</small></div><figcaption>That unforgettable moment</figcaption></figure>
+        <figure class="photo-card photo-tall reveal"><img src="assets/photos/photo2.jpg" alt="Add another favourite memory" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder">✿<small>a memory to keep</small></div><figcaption>One of my happiest memories</figcaption></figure>
+        <figure class="photo-card reveal"><img src="assets/photos/photo3.jpg" alt="Add one more favourite memory" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder">♡<small>my favourite person</small></div><figcaption>Just you being you</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="letter" class="letter-section section">
+      <div class="letter-wrap reveal">
+        <p class="eyebrow">OPEN WHEN YOU'RE READY</p>
+        <div class="envelope">💌</div>
+        <h2>A letter, <em>for you.</em></h2>
+        <p class="body-copy">A few words that could never quite fit into a text message.</p>
+        <button id="letter-button" class="primary-btn" type="button">Read my letter ♥</button>
+        <article id="letter-content" class="letter-paper hidden">
+          <p>My dearest Shruti,</p>
+          <p>Happy birthday, my favourite person. I hope today brings you the kind of happiness you bring into my life without even trying. I wish I could be there to see your smile, celebrate with you, and give you the biggest hug.</p>
+          <p>Until I can do all of that in person, let this little website remind you that you are loved, appreciated, and thought of — today and every day.</p>
+          <p>Keep smiling, keep shining, and never forget how special you are to me.</p>
+          <p class="signature">With all my love,<br>Yours ♥</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final section">
+      <div class="final-heart">♡</div>
+      <p class="eyebrow reveal">ONE LAST THING</p>
+      <h2 class="reveal">The world got<br><em>luckier</em> the day you arrived.</h2>
+      <p class="body-copy reveal">Happy Birthday once again, Shruti. Here's to more memories, more laughter, and the day distance becomes just a story we tell. 💗</p>
+      <div class="love-note reveal">You are my favourite notification. <span>♥</span></div>
+    </section>
+
+    <footer>Made with love, just for Shruti <span>♥</span></footer>
+  </main>
+  <audio id="background-music" loop preload="none"></audio>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

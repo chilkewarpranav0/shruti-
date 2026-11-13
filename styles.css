@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--pink:#e889a9;--deep:#a83f69;--ink:#4b3040;--muted:#8c7180;--cream:#fff8fa;--rose:#fbe5ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}button,a{font:inherit}.hidden{display:none!important}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.hearts span{position:absolute;bottom:-50px;color:#e9a2ba;opacity:.22;font-size:18px;animation:float-up linear infinite}
+@keyframes float-up{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.gate{position:fixed;inset:0;z-index:10;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 50% 35%,#fff 0,#fff2f6 48%,#f9dce7 100%);transition:opacity .45s,transform .45s}.gate-leave{opacity:0;transform:scale(1.04);pointer-events:none}.gate-card{width:min(100%,490px);text-align:center;padding:54px 38px;background:#ffffffd9;border:1px solid #fff;border-radius:28px;box-shadow:0 24px 80px #a83f6918;backdrop-filter:blur(12px)}.tiny-heart{font-size:42px;color:var(--pink);margin-bottom:8px}.eyebrow{font-size:10px;letter-spacing:.24em;font-weight:700;color:var(--deep)}h1,h2{font-family:'Playfair Display',serif;font-weight:500;letter-spacing:-.035em}.gate h1{font-size:clamp(42px,8vw,62px);margin:12px 0}.gate h1 span{font-family:sans-serif;font-size:.48em;color:var(--pink);vertical-align:top}.gate-copy,.gate-foot{color:var(--muted);line-height:1.8;font-size:14px}.gate form{margin-top:34px;text-align:left}.gate label{display:block;font-size:12px;font-weight:700;margin:0 0 9px 3px}.password-row{display:flex;gap:8px}.password-row input{min-width:0;flex:1;border:1px solid #f0ccd9;background:#fff;border-radius:12px;padding:14px 15px;outline:none;color:var(--ink)}.password-row input:focus{border-color:var(--pink);box-shadow:0 0 0 3px #e889a922}.password-row button,.primary-btn{border:0;border-radius:999px;background:var(--deep);color:white;padding:13px 21px;text-decoration:none;cursor:pointer;transition:transform .2s,background .2s}.password-row button:hover,.primary-btn:hover{transform:translateY(-2px);background:#883353}.password-row button span{margin-left:5px}.error{min-height:18px;color:#b23c62;font-size:12px;margin:8px 3px}.gate-foot{font-size:11px;margin:26px 0 0}
+#site{position:relative;z-index:1}.topbar{height:76px;padding:0 7vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f3e2e9;background:#fff9fbcc;position:absolute;top:0;left:0;right:0;z-index:3;backdrop-filter:blur(10px)}.brand{font-family:'Playfair Display',serif;font-size:21px;color:var(--ink);text-decoration:none}.brand span,footer span{color:var(--pink)}.music-toggle{border:1px solid #efcbd8;background:#fff;border-radius:999px;padding:9px 15px;color:var(--deep);cursor:pointer;font-size:12px}.music-toggle[aria-pressed=true]{background:var(--rose)}
+.section{padding:120px 8vw;position:relative;text-align:center}.hero{min-height:100vh;padding-top:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#fff9fb,#fdebf1 62%,#fff7f9)}.hero-glow{position:absolute;width:540px;height:540px;border-radius:50%;background:#f8cbdc55;filter:blur(45px);top:15%;left:50%;transform:translateX(-50%)}.hero>*:not(.hero-glow){position:relative}.hero h1{font-size:clamp(62px,10vw,112px);line-height:1.02;margin:22px 0;color:#543246}.hero h1 em,h2 em{font-weight:500;color:var(--deep)}.hero h1 span{font-family:sans-serif;color:var(--pink);font-size:.48em;vertical-align:top}.hero-sub{max-width:470px;color:var(--muted);line-height:1.8;font-size:16px;margin:10px 0 28px}.primary-btn{display:inline-block;font-size:13px;letter-spacing:.02em}.scroll-note{position:absolute!important;bottom:30px;font-size:9px;letter-spacing:.25em;color:#b18b9c}
+.intro{background:#fff;padding-top:145px;padding-bottom:145px}.intro h2,.gallery h2,.letter-section h2,.final h2{font-size:clamp(43px,7vw,72px);line-height:1.12;margin:20px 0}.body-copy{max-width:570px;margin:0 auto;color:var(--muted);font-size:15px;line-height:2}.big-heart{font-size:56px;color:#e89bb5;margin-top:38px;animation:pulse 2s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.15)}}
+.gallery{background:#fff5f8}.section-hint{font-size:12px;color:var(--muted);margin:0 auto 42px}.photo-grid{max-width:930px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:center}.photo-card{margin:0;background:white;padding:10px 10px 17px;box-shadow:0 12px 35px #8e4d6512;transform:rotate(-2deg)}.photo-card:nth-child(2){transform:rotate(2deg)}.photo-card:nth-child(3){transform:rotate(-1deg)}.photo-card img,.photo-placeholder{width:100%;height:245px;object-fit:cover;background:#f8e0e9}.photo-placeholder{display:none;place-items:center;align-content:center;gap:10px;color:#d17d9c;font-family:'Playfair Display',serif;font-size:48px}.photo-placeholder small{font:11px 'DM Sans',sans-serif;letter-spacing:.08em}.photo-card figcaption{font-family:'Playfair Display',serif;font-style:italic;font-size:14px;margin-top:13px;color:#76566a}
+.letter-section{background:linear-gradient(140deg,#f9e1ea,#fff8fa);padding-top:140px;padding-bottom:140px}.letter-wrap{max-width:700px;margin:auto}.envelope{font-size:54px;margin:20px}.letter-paper{max-width:610px;margin:35px auto 0;text-align:left;padding:38px 42px;background:#fffdf8;border:1px solid #f2e5d7;box-shadow:0 18px 55px #805a4a12;font-family:'Playfair Display',serif;font-size:16px;line-height:1.9;color:#705466;animation:paper-in .5s ease}.letter-paper p{margin:0 0 17px}.letter-paper .signature{text-align:right;font-style:italic;color:var(--deep);margin-top:28px}@keyframes paper-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.final{background:#fff;text-align:center;padding-top:150px;padding-bottom:130px}.final-heart{font-size:50px;color:var(--pink);margin-bottom:25px}.love-note{display:inline-block;margin-top:35px;padding:14px 22px;border:1px solid #f0d2dd;border-radius:999px;color:var(--deep);font-family:'Playfair Display',serif;font-style:italic}.love-note span{color:var(--pink)}footer{text-align:center;padding:24px;background:#fff5f8;color:#9a7b8b;font-size:11px;letter-spacing:.04em}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:700px){.section{padding:95px 7vw}.topbar{height:65px;padding:0 6vw}.hero{padding-top:150px}.hero h1{font-size:clamp(58px,15vw,85px)}.photo-grid{grid-template-columns:1fr;max-width:370px;gap:24px}.photo-card,.photo-card:nth-child(2),.photo-card:nth-child(3){transform:none}.photo-card img,.photo-placeholder{height:260px}.photo-tall{margin:0}.letter-paper{padding:27px 24px}.gate-card{padding:43px 23px}.password-row{flex-direction:column}.password-row button{padding:14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* Small teddy-and-ribbon decorations */
+.hero-ribbon{position:absolute!important;z-index:1;font-size:clamp(38px,6vw,66px);filter:drop-shadow(0 8px 10px #a83f6920);animation:gentle-sway 4s ease-in-out infinite}
+.ribbon-left{top:22%;left:9%;transform:rotate(-14deg)}
+.ribbon-right{top:31%;right:9%;transform:rotate(13deg);animation-delay:-2s}
+.teddy{position:absolute!important;z-index:1;font-size:clamp(42px,6vw,68px);filter:drop-shadow(0 8px 10px #a83f6918);animation:teddy-bob 3.8s ease-in-out infinite}
+.teddy-left{bottom:15%;left:10%;transform:rotate(-8deg)}
+.teddy-right{bottom:17%;right:10%;transform:rotate(8deg);animation-delay:-1.9s}
+.tiny-teddy-row{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:25px;font-size:27px}
+.tiny-teddy-row span:nth-child(2){font-size:22px}
+@keyframes gentle-sway{0%,100%{translate:0 0;rotate:-3deg}50%{translate:0 -7px;rotate:3deg}}
+@keyframes teddy-bob{0%,100%{translate:0 0}50%{translate:0 -9px}}
+@media(max-width:700px){.ribbon-left{top:16%;left:4%}.ribbon-right{top:22%;right:4%}.teddy-left{bottom:7%;left:3%}.teddy-right{bottom:8%;right:3%}}
+
+
+/* A little life in the memory frames */
+.photo-card{
+  animation: photo-float 5.5s ease-in-out infinite;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.photo-card:nth-child(2){animation-delay:-1.8s}
+.photo-card:nth-child(3){animation-delay:-3.6s}
+.photo-card:hover{
+  transform:translateY(-9px) rotate(0deg) scale(1.025);
+  box-shadow:0 22px 45px #8e4d6528;
+  z-index:2;
+}
+@keyframes photo-float{
+  0%,100%{translate:0 0}
+  50%{translate:0 -7px}
+}
+@media(prefers-reduced-motion:reduce){
+  .photo-card{animation:none}
+}
